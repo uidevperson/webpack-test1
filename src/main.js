@@ -1,7 +1,7 @@
 // import notification from './notification';
 const testing = 'testing';
 console.log('testing');
-require('./main.scss');
+// require('./main.scss');
 
 // class Form {
 //     constructor(){
