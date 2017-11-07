@@ -1,5 +1,4 @@
 import notification from './notification';
+require('./main.css');
 
-console.log(notification.notify, notification.log);
-notification.log('panys');
-notification.notify(' alert testing');
+notification.log('pants');
