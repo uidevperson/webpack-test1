@@ -1,7 +1,7 @@
 'use strict';
-var webpack = require('webpack');
-var path = require('path');
-var inProduction = (process.env.NODE_ENV  === 'production');
+const webpack = require('webpack');
+const path = require('path');
+const inProduction = (process.env.NODE_ENV  === 'production');
 
 module.exports = {
   entry: './src/main.js',
@@ -11,6 +11,11 @@ module.exports = {
   },
   module: {
     rules:[
+      {
+        test: /\.s[ac]ss$/,
+        exclude: /(node_modules|bower_components)/,
+        use: ['style-loader', 'css-loader', 'sass-loader']
+      },
       {
         test: /\.css$/,
         exclude: /(node_modules|bower_components)/,
